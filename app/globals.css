@@ -2,32 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #001133;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #f9f9f9;
+}
+@layer base{
+    .navlist{
+        @apply  hover:text-[#00BFFF] py-5 px-4 hover:border-b-[2px] hover:border-[#00BFFF] text-base 
+    }
+    .foot{
+        @apply hover:text-[#00BFFF]  px-4  text-base 
+    }
+
+}
+@layer components{
+    .btn{
+        @apply w-[250px] h-[50px] bg-[#FF4F5B] text-white rounded-lg text-xl font-semibold hover:bg-[hsl(355,35%,20%)]
+    }
+
+    .lang-span{
+        @apply px-5 py-3 h-[33px] w-[80px]
+    }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+@layer utilities{
+    .card{
+        @apply relative w-[320px] h-[450px] rounded-[20px] shadow-[0_15px_35px_rgba(0,0,0,0.25)] overflow-hidden
+        
+    }
+
+}   
+
+.card .poster{
+    position: relative; 
+    overflow: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.card .poster::before{
+    content: "";
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #2C3E50 40%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .poster::before{
+    bottom: 0;
+}
+.card-img{
+    transition: 0.5s;
+}
+.card:hover .card-img{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+.details{
+    position: absolute;
+    bottom: -123px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    
+}
+.card:hover .details{
+    bottom: 0px;
+}
+.card-list li{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card-list li Image{
+    max-width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.card:hover .epilogue {
+    white-space: normal;
+    overflow: visible;
+}
+
+.epilogue {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 250px;
 }
