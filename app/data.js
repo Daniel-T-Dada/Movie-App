@@ -9,7 +9,7 @@ export const movieData = [
         type: "Feature Film",
         actors: ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
         triller: "https://www.youtube.com/watch?v=43uAputjI4k",
-        rating: 4.2,
+        rating: 5,
         keywords: ["horror", "shamanism", "mystery", "superstition"],
         kind: "G"
     },
@@ -107,14 +107,14 @@ export const movieData = [
     },
     {
         title: "Train to Busan",
-        pics: "Train_to_Busan.jpg",
+        pics: "Train to Busan.jpg",
         epilogue: "A zombie outbreak occurs in South Korea, and passengers aboard a fast train from Seoul to Busan must fight for their survival. As the infection spreads rapidly through the train, a father and his daughter, along with a group of other passengers, struggle to stay alive in this intense, action-packed horror thriller.",
         DateReleased: "2016-07-20",
         category: "Horror, Action, Thriller",
         type: "Feature Film",
         actors: ["Gong Yoo", "Ma Dong-seok", "Jung Yu-mi"],
         triller: "https://www.youtube.com/watch?v=pyWuHv2-Abk",
-        rating: 4.7,
+        rating: 5,
         keywords: ["zombies", "survival", "action", "thriller"],
         kind: "PG"
     },
@@ -631,6 +631,19 @@ export const movieData = [
         rating: 4.0,
         keywords: ["serial killer", "deaf woman", "suspense", "thriller", "chase"],
         kind: "R"
+    },
+    {
+        title: "Unlocked",
+        pics: "Unlocked.jpg",
+        epilogue: "When a woman's lost smartphone falls into the hands of a sociopathic hacker, her life spirals out of control as he begins to invade her privacy and manipulate her every move. This tech-focused thriller sheds light on the dangers of a hyperconnected world, blending suspense with themes of control, privacy invasion, and paranoia.",
+        date_released: "February 17, 2023",
+        category: "Thriller, Mystery",
+        type: "Feature Film",
+        actors: ["Im Si-wan", "Chun Woo-hee", "Kim Ye-won", "Park Ho-san", "Jeon Jin-oh"],
+        trailer: "https://www.youtube.com/watch?v=ZXtdzNKpNzg",
+        rating: 4.2,
+        keywords: ["smartphone", "privacy", "hacker", "stalking", "manipulation"],
+        kind: "PG-13"
     },
     {
         title: "Spiritwalker",
