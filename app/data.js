@@ -48,7 +48,7 @@ export const movieData = [
         type: "TV Series",
         actors: ["Lee Jae-wook", "Jung So-min", "Hwang Min-hyun"],
         triller: "https://www.youtube.com/watch?v=x3zXzWwXfX4",
-        rating: 4.8,
+        rating: 3.5,
         keywords: ["fantasy", "romance", "magic", "destiny"],
         kind: "PG"
     },
