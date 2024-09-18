@@ -65,9 +65,9 @@ const Footer = () => {
                     </Link>
                 </div>
 
-                <div className="flex justify-between border-t-2 mt-10 pt-5 text-slate-300 border-slate-700">
-                    <div className="lang">
-                        <span className="bg-[#289ac0] lang-span">English</span>
+                <div className="flex justify-between border-t-2 mt-10 pt-5 pb-4 text-slate-300 border-slate-700">
+                    <div className="lang flex justify-center items-center">
+                        <span className=" lang-span">English</span>
                         <span className="lang-span">Yoruba</span>
                         <span className="lang-span">Igbo</span>
                     </div>

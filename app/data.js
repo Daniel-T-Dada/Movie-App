@@ -3,6 +3,7 @@ export const movieData = [
     {
         title: "The Wailing",
         pics: "The_Wailing.jpg",
+        background: 'The_Wailing.jpg',
         epilogue: "In a remote village, a mysterious illness spreads after a stranger's arrival. A local police officer, trying to solve the mystery and protect his daughter, finds himself entangled in a series of bizarre events. 'The Wailing' is a horror-thriller that blends superstition, folklore, and shamanism.",
         DateReleased: "2016-05-12",
         category: "Horror, Mystery, Thriller",
@@ -95,6 +96,7 @@ export const movieData = [
     {
         title: "The Start-Up",
         pics: "The_Start_Up.jpg",
+        background: "The_Start_Up.jpg",
         epilogue: "Set in the dynamic world of start-ups, this drama follows the journey of Seo Dal-mi, a young woman who dreams of becoming Korea's Steve Jobs. Alongside a brilliant but underachieving tech genius, Nam Do-san, they navigate the ups and downs of entrepreneurship, love, and friendship in a highly competitive industry.",
         DateReleased: "2020-10-17",
         category: "Drama, Romance",
