@@ -26,9 +26,8 @@ const Hero = () => {
     };
     return (
         <>
-            <main className="h-screen">
-                <div className="bg-gradient-to-t from-[#28586879] h-screen absolute w-full inset-0  -z-10"></div>
-                <div className="bg-[url('/cover/The_Start_Up.jpg')] h-screen w-full bg-cover bg-no-repeat bg-center inset-0 top-0 -z-50 absolute">
+            <main className="h-screen hero">
+                <div className=" bg-[url('/cover/The_Start_Up.jpg')] h-screen w-full bg-cover bg-no-repeat bg-center inset-0 top-0 -z-50 absolute">
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
@@ -76,7 +75,7 @@ const Hero = () => {
                         Just testing the white color on the gradient color for  now white color on the gradient color fe gradient color for now white color on the gradient color for now white color on the gre gradient color for now white color
                     </h2>
                     <div className="flex justify-start gap-4 mt-5">
-                        <button className="btn border flex items-center bg-[#b82727] border-none h-[60px] w-[200px] px-[24px] justify-center gap-2 ">
+                        <button className="btn border flex items-center bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 border-none h-[60px] w-[200px] px-[24px] justify-center gap-2 ">
                             <Image src='/Brand/play-circle.png' width={24} height={24} alt="watch" />
                             <p>Watch Now</p>
                         </button>

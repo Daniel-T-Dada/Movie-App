@@ -12,20 +12,24 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=43uAputjI4k",
         rating: 5,
         keywords: ["horror", "shamanism", "mystery", "superstition"],
-        kind: "G"
+        kind: "G",
+        duration: "156 minutes",
+        director: "Na Hong-jin"
     },
     {
         title: "Monstrum",
         pics: "Monstrum.jpg",
         epilogue: "Set in the Joseon era, 'Monstrum' follows a legendary general who is called upon to protect the kingdom from a terrifying monster that is rumored to be spreading a deadly plague. The film blends action, horror, and historical drama in a thrilling tale of heroism.",
-        DateReleased: "2018-09-12",
+        dateReleased: "2018-09-12",
         category: "Action, Horror, Historical",
         type: "Feature Film",
         actors: ["Kim Myung-min", "Kim In-kwon", "Lee Hye-ri"],
         triller: "https://www.youtube.com/watch?v=jzJnrGZhTL4",
         rating: 4.0,
         keywords: ["monster", "historical", "action", "plague"],
-        kind: "PG"
+        kind: "PG",
+        duration: "105 minutes",
+        director: "Heo Jong-ho"
     },
     {
         title: "Jumong",
@@ -38,7 +42,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=Ih31tlb-QoM",
         rating: 4.5,
         keywords: ["historical", "epic", "founder", "Goguryeo"],
-        kind: "PG"
+        kind: "PG",
+        duration: "81 episodes",
+        director: "Lee Joo-hwan"
     },
     {
         title: "Alchemy of Souls",
@@ -51,7 +57,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=x3zXzWwXfX4",
         rating: 3.5,
         keywords: ["fantasy", "romance", "magic", "destiny"],
-        kind: "PG"
+        kind: "PG",
+        duration: "30 episodes",
+        director: "Park Joon-hwa"
     },
     {
         title: "Along with the Gods",
@@ -64,7 +72,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=NrYAGH1y-4E",
         rating: 4.6,
         keywords: ["afterlife", "fantasy", "trials", "redemption"],
-        kind: "PG"
+        kind: "PG",
+        duration: "139 minutes",
+        director: "Kim Yong-hwa"
     },
     {
         title: "A Werewolf Boy",
@@ -77,7 +87,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=_cZrAF06X-U",
         rating: 4.4,
         keywords: ["werewolf", "romance", "fantasy", "bond"],
-        kind: "G"
+        kind: "G",
+        duration: "125 minutes",
+        director: "Jo Sung-hee"
     },
     {
         title: "The Divine Fury",
@@ -90,9 +102,10 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=0MW7gS0R0lg",
         rating: 4.1,
         keywords: ["supernatural", "exorcism", "action", "revenge"],
-        kind: "PG"
+        kind: "PG",
+        duration: "129 minutes",
+        director: "Kim Joo-hwan"
     },
-
     {
         title: "The Start-Up",
         pics: "The_Start_Up.jpg",
@@ -105,7 +118,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=GtSjhdm-Qmw",
         rating: 4.5,
         keywords: ["start-up", "entrepreneurship", "romance", "tech"],
-        kind: "G"
+        kind: "G",
+        duration: "16 episodes",
+        director: "Oh Choong-hwan"
     },
     {
         title: "Train to Busan",
@@ -118,7 +133,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=pyWuHv2-Abk",
         rating: 5,
         keywords: ["zombies", "survival", "action", "thriller"],
-        kind: "PG"
+        kind: "PG",
+        duration: "118 minutes",
+        director: "Yeon Sang-ho"
     },
     {
         title: "The Witch",
@@ -131,7 +148,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=Fz7HmgPJQak",
         rating: 4.3,
         keywords: ["superpowers", "conspiracy", "thriller", "mystery"],
-        kind: "PG"
+        kind: "PG",
+        duration: "125 minutes",
+        director: "Park Hoon-jung"
     },
     {
         title: "Burning",
@@ -144,7 +163,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=oihHs2Errwk",
         rating: 4.6,
         keywords: ["psychological", "mystery", "thriller", "obsession"],
-        kind: "R"
+        kind: "R",
+        duration: "148 minutes",
+        director: "Lee Chang-dong"
     },
     {
         title: "The Handmaiden",
@@ -157,7 +178,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=whldChqCsYk",
         rating: 4.8,
         keywords: ["thriller", "romance", "deception", "erotic"],
-        kind: "R"
+        kind: "R",
+        duration: "145 minutes",
+        director: "Park Chan-wook"
     },
     {
         title: "The Host",
@@ -170,7 +193,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=2pPSSKcPEJ8",
         rating: 5,
         keywords: ["monster", "action", "horror", "environment"],
-        kind: "PG-13"
+        kind: "PG-13",
+        duration: "120 minutes",
+        director: "Bong Joon-ho"
     },
     {
         title: "The King",
@@ -183,7 +208,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=jwM5C8s4D3I",
         rating: 4.3,
         keywords: ["crime", "power", "corruption", "betrayal"],
-        kind: "R"
+        kind: "R",
+        duration: "134 minutes",
+        director: "Han Jae-rim"
     },
     {
         title: "Spring, Summer, Fall, Winter... and Spring",
@@ -196,9 +223,10 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=t0mr9Dfp1uk",
         rating: 4.7,
         keywords: ["spiritual", "life cycle", "meditative", "drama"],
-        kind: "PG-13"
+        kind: "PG-13",
+        duration: "103 minutes",
+        director: "Kim Ki-duk"
     },
-
     {
         title: "A Taxi Driver",
         pics: 'A_Taxi_Driver.jpg',
@@ -210,7 +238,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=8M8gCszKge8",
         rating: 4.7,
         keywords: ["history", "uprising", "democracy", "drama"],
-        kind: "PG-13"
+        kind: "PG-13",
+        duration: "137 minutes",
+        director: "Jang Hoon"
     },
     {
         title: "Mother",
@@ -223,9 +253,10 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=97eM5C-qY_M",
         rating: 4.5,
         keywords: ["mother", "thriller", "murder", "suspense"],
-        kind: "R"
+        kind: "R",
+        duration: "128 minutes",
+        director: "Bong Joon-ho"
     },
-
     {
         title: "Parasite",
         pics: 'Parasite.jpg',
@@ -237,9 +268,10 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=5xH0HfJHsaY",
         rating: 5.0,
         keywords: ["class", "inequality", "thriller", "comedy"],
-        kind: "R"
+        kind: "R",
+        duration: "132 minutes",
+        director: "Bong Joon-ho"
     },
-
     {
         title: "The Man from Nowhere",
         pics: 'The_Man_from_Nowhere.jpg',
@@ -251,7 +283,9 @@ export const movieData = [
         triller: "https://www.youtube.com/watch?v=38rPoGSr19U",
         rating: 4.6,
         keywords: ["action", "thriller", "revenge", "kidnapping"],
-        kind: "R"
+        kind: "R",
+        duration: "119 minutes",
+        director: "Lee Jeong-beom"
     },
     {
         title: "Silenced",
@@ -412,6 +446,7 @@ export const movieData = [
     {
         title: "The Call",
         pics: "The Call.jpg",
+        director: 'Double D',
         epilogue: "Two women living in different times, but in the same house, are connected by a phone call. As they manipulate each other's pasts, a dangerous game of cat and mouse ensues, leading to shocking consequences. This psychological horror blends time-travel elements with intense suspense and a twisted plot.",
         date_released: "November 27, 2020",
         category: "Horror, Thriller, Mystery",
@@ -701,16 +736,16 @@ export const movieData = [
         kind: "PG-13"
     },
     {
-    title: "Sleep",
-    pics: "Sleep.jpg",
-    epilogue: "A couple's peaceful life takes a disturbing turn when one of them begins experiencing terrifying sleep-related events. As the boundary between dreams and reality blurs, they must confront the deep-seated fears and traumas that surface. *Sleep* is a psychological horror-drama that explores the fragility of the mind and the terrifying power of the subconscious.",
-    date_released: "2023",
-    category: "Horror, Drama, Psychological",
-    type: "Feature Film",
-    actors: ["Jung Yu-mi", "Lee Sun-kyun", "Kim Soo-jin", "Kim Kyung-ik", "Jung Ga-ram"],
-    trailer: "https://www.youtube.com/watch?v=VJSHgG7A45k",
-    rating: 4.0,
-    keywords: ["sleep disorder", "psychological horror", "nightmares", "subconscious", "couple"],
-    kind: "R"
+        title: "Sleep",
+        pics: "Sleep.jpg",
+        epilogue: "A couple's peaceful life takes a disturbing turn when one of them begins experiencing terrifying sleep-related events. As the boundary between dreams and reality blurs, they must confront the deep-seated fears and traumas that surface. *Sleep* is a psychological horror-drama that explores the fragility of the mind and the terrifying power of the subconscious.",
+        date_released: "2023",
+        category: "Horror, Drama, Psychological",
+        type: "Feature Film",
+        actors: ["Jung Yu-mi", "Lee Sun-kyun", "Kim Soo-jin", "Kim Kyung-ik", "Jung Ga-ram"],
+        trailer: "https://www.youtube.com/watch?v=VJSHgG7A45k",
+        rating: 4.0,
+        keywords: ["sleep disorder", "psychological horror", "nightmares", "subconscious", "couple"],
+        kind: "R"
     },
 ];

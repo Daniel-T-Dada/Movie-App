@@ -6,7 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const Footer = () => {
     return (
         <>
-            <footer className="z-50  flex  justify-center flex-col w-full bg-[#19305e]">
+            <footer className="z-50  flex  justify-center flex-col w-full bg-[#19305e] rounded rounded-t-3xl">
                 <div className="mt-32 flex justify-center">
                     <Link href="/" className='flex items-center justify-center gap-4 h-[68px]'>
                         <Image src="/Logo.png" alt="Double D Logo" width={30} height={30} />

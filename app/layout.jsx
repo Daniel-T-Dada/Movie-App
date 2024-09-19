@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { SearchProvider } from "./SearchContext";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,16 +19,17 @@ export default function RootLayout({ children }) {
 
 
       <html lang="en">
-        <body className={inter.className}>
+        <body className={inter.className }>
+          <SearchProvider>
+            <Navbar />
 
-          <Navbar />
+            <div className="min-h-screen">
 
-          <div className="min-h-screen">
+              {children}
 
-            {children}
-
-          </div>
-          <Footer />
+            </div>
+            <Footer />
+          </SearchProvider>
         </body>
       </html>
     </>
