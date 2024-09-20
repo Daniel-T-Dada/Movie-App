@@ -6,6 +6,8 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { useContext, useState, useEffect } from 'react'; // Import useContext
 import { SearchContext } from '../SearchContext'; // Import SearchContext
 
@@ -14,6 +16,12 @@ const Navbar = () => {
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isSearching, setIsSearching] = useState(false);
+
+    const [menuIcon, setMenuIcon] = useState(false)
+
+    const handleSmallerScreenNavigation = () => {
+        setMenuIcon(!menuIcon)
+    }
 
     const handleSearchIconClick = () => {
         setIsSearching(true);
@@ -32,7 +40,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const heroHeight = document.querySelector('.hero')?.offsetHeight || 0; 
+            const heroHeight = document.querySelector('.hero')?.offsetHeight || 0;
             if (window.scrollY > heroHeight) {
                 setIsScrolled(true);
             } else {
@@ -53,15 +61,15 @@ const Navbar = () => {
                 <div className='flex justify-between items-center pt-3 pb-3 px-4 sm:px-8 lg:px-12'>
 
                     {/* Logo Section */}
-                    <div>
-                        <Link href="/" className='flex justify-center items-center gap-4 h-[50px] sm:h-[68px]'>
+                    <div className=" w-[200px] sm:w-[200px] lg:w-[160px] flex justify-between">
+                        <Link href="/" onClick={handleSmallerScreenNavigation} className='flex justify-start items-center gap-2 h-[50px] sm:h-[68px]'>
                             <Image src="/Logo.png" alt="Double D Logo" width={20} height={10} className="sm:w-[25px] sm:h-[25px]" />
-                            <h3 className='text-lg sm:text-xl lg:text-2xl font-bold text-white'>Double D</h3>
+                            <h3 className='text-lg w-[100px] sm:w-[120px] sm:text-xl lg:text-2xl font-bold text-white'>Double D</h3>
                         </Link>
                     </div>
 
                     {/* Navigation Links */}
-                    <ul className='hidden sm:flex w-full md:w-6/12 justify-center items-baseline gap-4 sm:gap-6 lg:gap-8'>
+                    <ul className='hidden lg:flex sm:hidden w-full md:w-6/12 justify-center items-baseline gap-4 sm:gap-6 lg:gap-8'>
                         <Link href='/'>
                             <li className='navlist'>Home</li>
                         </Link>
@@ -115,10 +123,47 @@ const Navbar = () => {
                         </div>
 
                         {/* User Icon */}
-                        <div className="navbar-user flex items-center">
+                        <div className="navbar-user sm:hidden items-center hidden lg:flex">
                             <AccountCircleIcon className="text-2xl sm:text-3xl text-white" />
                             <ArrowRightIcon className="hidden sm:block text-white" />
                             <ArrowDropDownIcon className="hidden" />
+                        </div>
+                    </div>
+
+                    <div onClick={handleSmallerScreenNavigation} className='flex  lg:hidden'>
+                        {menuIcon ?
+                            (<CloseRoundedIcon size={25} className="text-[#f9f9f9] text-4xl" />)
+                            :
+                            (<MenuRoundedIcon size={25} className="text-[#f9f9f9] text-4xl" />)}
+                    </div>
+
+                    <div className={menuIcon ?
+                        "lg:hidden absolute top-[70px] right-0  bottom-0 left-0 flex justify-center items-center w-full h-screen bg-[#001133] text-white text-center ease-in duration-300"
+                        :
+                        "lg:hidden absolute top-[70px] right-0 left-[-100%] flex justify-center items-center w-full h-screen bg-[#001133] text-white text-center ease-in duration-300"}>
+
+                        {/* Smaller screens - Navbar links */}
+                        <div className="w-full">
+                            <ul className="font-bold text-xl sm:text-2xl">
+                                <li onClick={handleSmallerScreenNavigation} className="py-5 text-slate-300 hover:text-[#74cbff] cursor-pointer">
+                                    <Link href="/">Home</Link>
+                                </li>
+                                <li onClick={handleSmallerScreenNavigation} className="py-5 text-slate-300 hover:text-[#74cbff] cursor-pointer">
+                                    <Link href="/about">About</Link>
+                                </li>
+                                <li onClick={handleSmallerScreenNavigation} className="py-5 text-slate-300 hover:text-[#74cbff] cursor-pointer">
+                                    <Link href="/contact">Contact</Link>
+                                </li>
+                            </ul>
+
+                            <div className="flex flex-col justify-center items-center sm:text-2xl mt-16">
+                                <Link href="/login" onClick={handleSmallerScreenNavigation}>
+                                    <button className="bg-[#0040b0] text-slate-300 rounded-full  font-bold py-3 w-[250px] mb-5">Login</button>
+                                </Link>
+                                <Link href="/signup" onClick={handleSmallerScreenNavigation}>
+                                    <button className="border-2 border-[#74cbff] text-slate-300 rounded-full font-bold py-3 w-[250px] mb-5">Sign up</button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

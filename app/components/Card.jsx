@@ -17,7 +17,7 @@ const Card = () => {
     return (
         <>
             {/* Responsive grid layout */}
-            <div className="movielists grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+            <div className="movielists grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 gap-8 lg:gap-16 justify-center items-center px-[40px]">
                 {sortedMovies.map((movie, index) => (
                     <Link href={`/movies/${String(movie.title).toLowerCase().split(' ').join('-')}`} title={movie.title} key={index} passHref>
                         <div className="card" key={index}>

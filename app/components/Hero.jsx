@@ -26,14 +26,14 @@ const Hero = () => {
         <>
             <main className="h-screen hero">
                 {/* Background Image */}
-                <div className="bg-[url('/cover/The_Start_Up.jpg')] h-screen w-full bg-cover bg-no-repeat bg-center inset-0 top-0 -z-50 absolute">
+                <div className="h-screen w-full bg-cover bg-no-repeat bg-center inset-0 top-0 -z-50 absolute">
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
                         loop={true}
                         autoplay={{
                             delay: 10000,
-                            disableOnInteraction: false,
+                            disableOnInteraction: true,
                         }}
                         pagination={{ clickable: true }}
                         navigation={true}
@@ -47,7 +47,7 @@ const Hero = () => {
                                     src={`/cover/${slide}`}
                                     alt={slide.replace(/_/g, ' ').replace('.jpg', '')}
                                     width={800}
-                                    height={400}
+                                    height={900}
                                     layout="responsive"
                                     objectFit="cover"
                                 />
@@ -58,19 +58,19 @@ const Hero = () => {
                             <svg viewBox="0 0 48 48" ref={progressCircle}>
                                 <circle cx="24" cy="24" r="20"></circle>
                             </svg>
-                            <span ref={progressContent}></span>
+                        
                         </div>
                     </Swiper>
                 </div>
 
                 {/* Content Section */}
-                <div className="flex justify-start lg:justify-start -left-60 flex-col relative -bottom-[100px] sm:-bottom-[150px] lg:-bottom-[310px] w-[90%] sm:w-[70%] md:w-[60%] lg:w-[45rem] mx-auto ">
+                <div className="flex justify-start lg:justify-start left-30 top-[190px] sm:left-0 flex-col relative -bottom-[100px] sm:top-[79px] sm:-bottom-[150px] lg:-left-60 lg:top-[200px]  w-[90%] sm:w-[80%] md:w-[60%] lg:w-[45rem] mx-auto ">
 
                     <div className="title">
-                        <Image src='/Logos/The Start-up.png' width={1000} height={800} alt="watch" className="w-[50%] sm:w-[40%] lg:w-[100%]" />
+                        <Image src='/Logos/The Start-up.png' width={1000} height={800} alt="watch" className="w-[50%] sm:w-[100%] sm:pb-14 lg:w-[100%]" />
                     </div>
 
-                    <h2 className="text-base sm:text-lg lg:text-xl text-[#f0f0f0] h-auto overflow-hidden mt-2 sm:mt-5">
+                    <h2 className="text-base sm:text-xl lg:text-xl text-[#f0f0f0] h-auto overflow-hidden mt-2 sm:mt-16 lg:mt-0">
                         Just testing the white color on the gradient color for now white color on the gradient color for now...
                     </h2>
 

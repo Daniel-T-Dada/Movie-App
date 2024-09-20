@@ -25,7 +25,7 @@ const Page = () => {
 
 
             <div>
-                <div className=" movielists grid sm:grid-cols-2 lg:grid-cols-3  gap-32 pt-16 -z-20">
+                <div className=" movielists grid sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3  gap-12 pt-16 -z-20 justify-center items-center px-[40px] sm:px-[40px]">
                     {filterMovies.map((movie, index) => (
                         <Link href={`/movies/${String(movie.title).toLowerCase().split(' ').join('-')}`} title={movie.title} key={index} passHref>
                             <div className="card" key={index}>
