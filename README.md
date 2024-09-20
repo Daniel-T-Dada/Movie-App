@@ -1,8 +1,8 @@
 # Movie-App
 
-# 🎬 Movie Showcase Web Application
+# 🎬 Movie Streaming Web Application
 
-This project is a **Movie Showcase Web Application** built using **Next.js**. The application includes a dynamic movie list, a search feature, and a hero section with a Swiper carousel to display featured movies. It also uses **Tailwind CSS** for styling and **Swiper.js** for smooth transitions and navigation.
+This project is a **Movie Streaming Web Application** built using **Next.js**. The application includes a dynamic movie list, a search feature, and a hero section with a Swiper carousel to display featured movies. It also uses **Tailwind CSS** for styling and **Swiper.js** for smooth transitions and navigation.
 
 ## 🚀 Features
 
