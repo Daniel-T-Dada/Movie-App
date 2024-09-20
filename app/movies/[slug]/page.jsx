@@ -109,6 +109,12 @@ const MovieDetails = ({ params }) => {
                                     </td>
                                 </tr>
                                 <tr className='text-slate-500'>
+                                    <td>Actors:</td>
+                                    <td>
+                                        <span className="py-0 px-0 text-slate-300 ml-[10px]">{movie.actors}</span>
+                                    </td>
+                                </tr>
+                                <tr className='text-slate-500'>
                                     <td>Date Released:</td>
                                     <td>
                                         <span className="py-0 px-0 text-slate-300 ml-[10px]">{movie.datereleased}</span>

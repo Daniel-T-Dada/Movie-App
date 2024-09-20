@@ -8,15 +8,14 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import { useContext, useState, useEffect } from 'react'; // Import useContext
-import { SearchContext } from '../SearchContext'; // Import SearchContext
+import { useContext, useState, useEffect } from 'react';
+import { SearchContext } from '../SearchContext';
 
 const Navbar = () => {
 
     const { searchTerm, setSearchTerm } = useContext(SearchContext);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isSearching, setIsSearching] = useState(false);
-
     const [menuIcon, setMenuIcon] = useState(false)
 
     const handleSmallerScreenNavigation = () => {
@@ -34,7 +33,7 @@ const Navbar = () => {
 
     const handleBlur = () => {
         if (!searchTerm) {
-            setIsSearching(false); // Hide input if no text is in the search field
+            setIsSearching(false);
         }
     };
 
