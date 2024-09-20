@@ -64,13 +64,16 @@ const Hero = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="flex justify-start flex-col relative -bottom-[100px] sm:-bottom-[150px] lg:-bottom-[200px] w-[90%] sm:w-[70%] md:w-[60%] lg:w-[45rem] mx-auto">
+                <div className="flex justify-start lg:justify-start -left-60 flex-col relative -bottom-[100px] sm:-bottom-[150px] lg:-bottom-[310px] w-[90%] sm:w-[70%] md:w-[60%] lg:w-[45rem] mx-auto ">
+
                     <div className="title">
-                        <Image src='/Logos/The Start-up.png' width={800} height={1000} alt="watch" className="w-[50%] sm:w-[40%] lg:w-[30%]" />
+                        <Image src='/Logos/The Start-up.png' width={1000} height={800} alt="watch" className="w-[50%] sm:w-[40%] lg:w-[100%]" />
                     </div>
+
                     <h2 className="text-base sm:text-lg lg:text-xl text-[#f0f0f0] h-auto overflow-hidden mt-2 sm:mt-5">
                         Just testing the white color on the gradient color for now white color on the gradient color for now...
                     </h2>
+
                     <div className="flex flex-col sm:flex-row justify-start gap-4 mt-5">
                         <button className="btn border flex items-center bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 border-none h-[50px] sm:h-[60px] w-full sm:w-[200px] px-5 justify-center gap-2">
                             <Image src='/Brand/play-circle.png' width={24} height={24} alt="watch" />

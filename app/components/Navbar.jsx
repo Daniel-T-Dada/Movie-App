@@ -48,14 +48,14 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`navbar sticky top-0 z-100 `}>
-                <div className={`navbar-back transition-all duration-500 ${isScrolled ? 'bg-gradient-to-b from-[#001133]  to-[#00347791]' : 'bg-gradient-to-b  from-[#001133] via-[#002255a6] to-[#0034770c]'} w-full h-[80px] sm:h-[90px] fixed top-0 left-0 -z-10`}></div>
-                <div className='flex justify-between items-center pt-3 px-4 sm:px-8 lg:px-12'>
+            <nav className={`navbar sticky top-0 z-50 `}>
+                <div className={`navbar-back transition-all duration-500 ${isScrolled ? 'bg-gradient-to-b from-[#001133]  to-[#003477]' : 'bg-gradient-to-b  from-[#001133] via-[#002255] to-[#0034778f]'} w-full h-[80px] sm:h-[90px] fixed top-0 left-0 -z-10`}></div>
+                <div className='flex justify-between items-center pt-3 pb-3 px-4 sm:px-8 lg:px-12'>
 
                     {/* Logo Section */}
                     <div>
                         <Link href="/" className='flex justify-center items-center gap-4 h-[50px] sm:h-[68px]'>
-                            <Image src="/Logo.png" alt="Double D Logo" width={20} height={20} className="sm:w-[25px] sm:h-[25px]" />
+                            <Image src="/Logo.png" alt="Double D Logo" width={20} height={10} className="sm:w-[25px] sm:h-[25px]" />
                             <h3 className='text-lg sm:text-xl lg:text-2xl font-bold text-white'>Double D</h3>
                         </Link>
                     </div>

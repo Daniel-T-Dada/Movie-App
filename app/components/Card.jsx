@@ -63,14 +63,6 @@ const Card = () => {
                                     ))}
                                 </div>
 
-                                {/* Epilogue */}
-                                <div className="info text-xs sm:text-sm mt-4">
-                                    <p className="epilogue">
-                                        {movie.epilogue}
-                                    </p>
-                                </div>
-
-                                {/* Cast */}
                                 <div className="cast">
                                     <h4 className="mt-4 text-sm sm:text-md">Cast</h4>
                                     <ul className="card-list flex mt-2 sm:mt-4 gap-4">
