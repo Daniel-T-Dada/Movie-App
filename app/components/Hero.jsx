@@ -48,8 +48,7 @@ const Hero = () => {
                                     alt={slide.replace(/_/g, ' ').replace('.jpg', '')}
                                     width={800}
                                     height={900}
-                                    layout="responsive"
-                                    objectFit="cover"
+                                    style={{ objectFit: 'cover' }}
                                 />
                             </SwiperSlide>
                         ))}
@@ -58,7 +57,7 @@ const Hero = () => {
                             <svg viewBox="0 0 48 48" ref={progressCircle}>
                                 <circle cx="24" cy="24" r="20"></circle>
                             </svg>
-                        
+
                         </div>
                     </Swiper>
                 </div>
